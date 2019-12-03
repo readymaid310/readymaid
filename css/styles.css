@@ -13,7 +13,7 @@ body {
 }
 
 #logo-img {
-  background: url('../images/logo.jpg') no-repeat;
+  background: url('../images/restaurant-logo_large.png') no-repeat;
   width: 150px;
   height: 150px;
   margin: 10px 15px 10px 0;
@@ -120,7 +120,7 @@ body {
   border: 2px solid #3F0C1F;
 }
 
-#login-tile, #services-tile, #map-tile {
+#menu-tile, #specials-tile, #map-tile {
   height: 250px;
   width: 100%;
   margin-bottom: 15px;
@@ -128,18 +128,18 @@ body {
   border: 2px solid #3F0C1F;
   overflow: hidden;
 }
-#login-tile:hover, #services-tile:hover, #map-tile:hover {
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
-#login-tile {
-  background: url('../images/login_tile.jpg') no-repeat;
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
   background-position: center;
 }
-#services-tile {
-  background: url('../images/services_tile.jpg') no-repeat;
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
   background-position: center;
 }
-#login-tile span, #services-tile span, #map-tile span {
+#menu-tile span, #specials-tile span, #map-tile span {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -153,7 +153,7 @@ body {
 }
 /* END HOME PAGE */
 
-/* LOGIN CATEGORIES PAGE */
+/* MENU CATEGORIES PAGE */
 .category-tile { 
   position: relative;
   border: 2px solid #3F0C1F;
@@ -178,28 +178,28 @@ body {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 
-#login-categories-title + div {
+#menu-categories-title + div {
   margin-bottom: 50px;
 }
-/* END LOGIN CATEGORIES PAGE */
+/* END MENU CATEGORIES PAGE */
 
 /* SINGLE CATEGORY PAGE */
-.login-item-tile {
+.menu-item-tile {
   margin-bottom: 25px;
 }
-.login-item-tile hr {
+.menu-item-tile hr {
   width: 80%;
 }
-.login-item-tile .login-item-price {
+.menu-item-tile .menu-item-price {
   font-size: 1.1em;
   text-align: right;
   margin-top: -15px;
   margin-right: -15px;
 }
-.login-item-tile .login-item-price span {
+.menu-item-tile .menu-item-price span {
   font-size: .6em;
 }
-.login-item-photo {
+.menu-item-photo {
   position: relative;
   border: 2px solid #3F0C1F; 
   overflow: hidden;
@@ -209,21 +209,21 @@ body {
   margin-bottom: 20px;
   max-width: 250px;
 }
-.login-item-photo div {
+.menu-item-photo div {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 80px;
-  background-color: #8ec3eb;
+  background-color: #557c3e;
   text-align: center;
 }
-.login-item-description {
+.menu-item-description {
   padding-right: 30px;
 }
-h3.login-item-title {
+h3.menu-item-title {
   margin: 0 0 10px;
 }
-.login-item-details {
+.menu-item-details {
   font-size: .9em;
   font-style: italic;
 }
@@ -242,16 +242,16 @@ h3.login-item-title {
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    background: url('../images/logo_medium.png') no-repeat;
-    width: 99px;
-    height: 98px;
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
     margin: 5px 5px 5px 0;
   }
   /* End Header */
 
   /* Home Page */
   .container .jumbotron {
-    background: url('../images/main_medium.jpg') no-repeat;
+    background: url('../images/jumbotron_992.jpg') no-repeat;
     height: 558px;
   }
   /* End Home Page */
@@ -261,7 +261,7 @@ h3.login-item-title {
 @media (min-width: 768px) and (max-width: 991px) {
   /* Home Page */
   .container .jumbotron {
-    background: url('../images/main_small.jpg') no-repeat;
+    background: url('../images/jumbotron_768.jpg') no-repeat;
     height: 432px;
   }
   /* End Home Page */
@@ -286,10 +286,10 @@ h3.login-item-title {
     height: 20px;
   }
 
-  #collapsable-nav a { /* Collapsed nav login text */
+  #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
   }
-  #collapsable-nav a span { /* Collapsed nav login glyph */
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
     font-size: 1em;
     margin-right: 5px;
   }
@@ -329,18 +329,18 @@ h3.login-item-title {
     margin-top: 30px;
     padding: 0;
   }
-  #login-tile, #services-tile {
+  #menu-tile, #specials-tile {
     width: 360px;
     margin: 0 auto 15px;
   }
 
-  .login-item-photo {
+  .menu-item-photo {
     margin-right: auto;
   }
-  .login-item-tile .login-item-price {
+  .menu-item-tile .menu-item-price {
     text-align: center;
   }
-  .login-item-description {
+  .menu-item-description {
     text-align: center;;
   }
 }
@@ -356,7 +356,7 @@ h3.login-item-title {
   /* End Header */
   
   /* Home page */
-  #login-tile, #services-tile {
+  #menu-tile, #specials-tile {
     width: 280px;
     margin: 0 auto 15px;
   }
